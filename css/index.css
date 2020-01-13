@@ -141,6 +141,14 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
 .container {
   width: 100%;
   padding-right: 40px;
