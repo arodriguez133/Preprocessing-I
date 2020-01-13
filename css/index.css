@@ -1,1 +1,306 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bigName {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+.bigName h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  margin-top: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.25rem;
+  padding-bottom: 1rem;
+  padding-right: 0.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+nav a {
+  color: #6c757d;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section .jumbotron {
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #343a40;
+  margin-bottom: 2rem;
+  height: 25rem;
+}
+section .jumbotron .content {
+  padding-left: 0px;
+  padding-right: 0px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
+section .jumbotron h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  margin-bottom: 0.5rem;
+  margin-top: 0px;
+}
+section .jumbotron .jumbograph {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section .jumbotron p {
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0px;
+}
+section .jumbotron p a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+}
+div {
+  display: block;
+}
+.card-container-1 {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+.card-container-1 .card-1 {
+  width: 48%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-container-1 .card-1 .card-1-content {
+  padding: 1.5rem;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.card-container-1 .card-1 .card-1-content h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.card-container-1 .card-1 .card-1-content p {
+  margin-top: 0;
+}
+.card-container-1 .card-1 .card-1-content a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.work-exp {
+  display: flex;
+  margin-bottom: 20px;
+}
+.work-exp .text-muted {
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+.work-exp .work-2-column-1 {
+  width: 48%;
+}
+.work-exp .work-2-column-2 {
+  margin-left: 50px;
+  width: 48%;
+}
+.work-exp h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
+}
+img {
+  overflow: hidden;
+  vertical-align: middle;
+  object-fit: cover;
+}
