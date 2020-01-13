@@ -269,9 +269,27 @@ div {
   text-decoration: none;
   background-color: transparent;
 }
-.card-container-1 .card-1 .card-1-content a a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.work-exp {
+  display: flex;
+  margin-bottom: 20px;
+}
+.work-exp .text-muted {
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+.work-exp .work-2-column-1 {
+  width: 48%;
+}
+.work-exp .work-2-column-2 {
+  margin-left: 50px;
+  width: 48%;
+}
+.work-exp h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
 }
 img {
   overflow: hidden;
